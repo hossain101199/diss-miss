@@ -13,8 +13,8 @@ import Link from "next/link";
 
 const Sidebar = () => {
   return (
-    <aside className="hidden md:block bg-primary rounded-[45px] w-fit relative ">
-      <div className="relative px-8 pt-16 pb-9 flex flex-col items-center h-screen justify-between z-10">
+    <aside className="hidden md:block bg-primary rounded-[45px] w-fit relative overflow-hidden">
+      <div className="relative px-8 pt-16 pb-9 flex flex-col items-center h-screen justify-between z-10 ">
         <Link href="#">
           <Logo />
         </Link>
