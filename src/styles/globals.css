@@ -50,5 +50,30 @@
   top: 18%;
   left: 3%;
   -webkit-text-stroke: 1px rgba(183, 122, 255, 0.25);
+
   color: transparent;
+}
+
+.slideCount {
+  position: absolute;
+  top: -25%;
+  left: -40%;
+  -webkit-text-stroke: 1px rgba(183, 122, 255, 0.25);
+  color: transparent;
+}
+.NextButton {
+  width: 54px;
+  height: 54px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(3px);
+  border-radius: 100%;
+}
+.NextButton:hover {
+  background: linear-gradient(
+    130.81deg,
+    rgba(161, 95, 238, 0.4) 19.08%,
+    rgba(161, 95, 238, 0.116) 68.08%
+  );
+  border: 2px solid #a15fee;
 }

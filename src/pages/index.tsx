@@ -12,14 +12,18 @@ import Navbar from "@/components/molecules/Navbar";
 import bg from "../assets/images/logo.png";
 
 import Sidebar from "@/layout/Sidebar";
+import OwnershipInfo from "@/components/molecules/OwnershipInfo";
+import Cryptocurrencies from "@/components/molecules/Cryptocurrencies";
 
 export default function Home() {
   return (
-    <Container className="md:flex md:mt-32">
+    <Container className="md:flex md:my-32">
       <Sidebar />
-      <div className="bg-primary md:rounded-[45px]  pt-16 w-full">
+      <div className="bg-background md:rounded-[45px] pt-16 w-full">
         <Navbar />
         <HeroSection />
+        <OwnershipInfo />
+        <Cryptocurrencies />
       </div>
     </Container>
   );
