@@ -14,7 +14,7 @@ const BulletCheckMark = ({
       <div className="p-5 border-2 border-white-transparent rounded-full w-fit">
         <CheckMark />
       </div>
-      <BaseText className="text-[#E2EBFB]">{title}</BaseText>
+      <BaseText textColor="text-primary">{title}</BaseText>
     </div>
   );
 };

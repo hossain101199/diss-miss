@@ -5,15 +5,17 @@ interface BaseTextProps {
   className?: string;
   font?: string;
   size?: string;
+  textColor?: string;
 }
 const BaseText = ({
   children,
   className = "",
   font = "font-semibold",
   size = "text-base",
+  textColor = "text-secondary",
 }: BaseTextProps) => {
   return (
-    <div className={`text-secondary ${font} ${size} ${className}`}>
+    <div className={`${textColor} ${font} ${size} ${className}`}>
       {children}
     </div>
   );

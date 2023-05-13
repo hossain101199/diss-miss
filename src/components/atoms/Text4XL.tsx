@@ -10,10 +10,12 @@ const Text4XL = ({
   children,
   className = "",
   font = "font-extrabold",
-  size = "text-3xl md:text-[40px] md:leading-10",
+  size = "text-3xl md:text-[40px] leading-10 md:leading-snug",
 }: Text4XLProps) => {
   return (
-    <h4 className={`text-primary ${font} ${size} ${className}`}>{children}</h4>
+    <h4 className={`text-primary md:leading-snug ${font} ${size} ${className}`}>
+      {children}
+    </h4>
   );
 };
 
