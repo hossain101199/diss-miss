@@ -12,9 +12,9 @@ const CheckMark = () => {
       <path
         d="M11.0001 1L4.00004 8.00002L1 5"
         stroke="#EECB1C"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="border-t-2  border-white-transparent lg:rounded-[45px] lg:grid grid-cols-2 p-12 lg:p-20">
+    <footer className="border-t-2  border-white-transparent lg:rounded-[45px] lg:grid grid-cols-2 p-12 lg:p-20 mt-16 lg:mt-20">
       <div className="flex justify-center">
         <div>
           <Link href="#" className="flex items-center gap-5">

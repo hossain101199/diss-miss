@@ -10,13 +10,13 @@ import { coinList, coinSlogan, coinTitle } from "@/constants";
 const Cryptocurrencies = () => {
   return (
     <>
-      <div className="lg:flex flex-col items-center mt-16 md:mt-36 px-[30px]">
+      <div className="lg:flex flex-col items-center mt-16 lg:mt-36 px-[30px]">
         <BaseText className="mb-7">{coinSlogan}</BaseText>
         <Text4XL className="mb-8">{coinTitle}</Text4XL>
         <Hr />
       </div>
       <div className="CoinCardParents overflow-x-scroll overflow-hidden">
-        <div className="mt-8 md:mt-16 flex justify-center items-center gap-[30px]">
+        <div className="mt-8 lg:mt-16 flex justify-center items-center gap-[30px]">
           {coinList.slice(0, 5).map((coin) => (
             <CoinCard
               key={coin.id}
@@ -26,7 +26,7 @@ const Cryptocurrencies = () => {
             />
           ))}
         </div>
-        <div className="flex justify-center items-center gap-[30px] mt-[30px] mb-8 md:mb-16">
+        <div className="flex justify-center items-center gap-[30px] mt-[30px] mb-8 lg:mb-16">
           {coinList.slice(5, 9).map((coin) => (
             <CoinCard
               key={coin.id}

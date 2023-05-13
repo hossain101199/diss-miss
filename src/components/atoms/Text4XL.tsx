@@ -10,7 +10,7 @@ const Text4XL = ({
   children,
   className = "",
   font = "font-extrabold",
-  size = "text-3xl md:text-[40px] leading-10 md:leading-snug",
+  size = "text-3xl lg:text-[40px] leading-10 md:leading-snug",
 }: Text4XLProps) => {
   return (
     <h4 className={`text-primary md:leading-snug ${font} ${size} ${className}`}>

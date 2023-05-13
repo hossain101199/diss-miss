@@ -108,3 +108,21 @@
 .CoinCardParents::-webkit-scrollbar {
   display: none;
 }
+
+/* #tokensRate th,
+td {
+  padding: 27px 17px 27px 0;
+  text-align: left;
+} */
+/* #tokensRate tr th {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #e2ebfb;
+  opacity: 0.4;
+} */
+
+/* #tokensRate tr:last-child {
+  padding: 100px;
+} */

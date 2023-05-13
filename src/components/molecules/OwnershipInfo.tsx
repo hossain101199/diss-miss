@@ -10,7 +10,7 @@ import Text4XL from "../atoms/Text4XL";
 
 const OwnershipInfo = () => {
   return (
-    <section className="lg:grid lg:grid-cols-7 justify-center mt-20 lg:mt-36">
+    <section className="grid lg:grid-cols-7 justify-center mt-20 lg:mt-36">
       <Image
         src={crystalImage2}
         alt="Image description"
@@ -19,7 +19,7 @@ const OwnershipInfo = () => {
       <Image
         src={crystalImage}
         alt="Image description"
-        className="lg:col-start-5 lg:col-span-3 hidden lg:block w-full"
+        className="hidden lg:col-start-5 lg:col-span-3 lg:block w-full"
       />
       <div className="relative overflow-hidden lg:col-start-1 lg:row-start-1 lg:col-span-4 flex justify-end">
         <div className="flex flex-col relative mt-14 lg:mt-11 ms-6 lg:ms-0 pe-6">
