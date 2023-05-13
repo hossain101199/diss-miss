@@ -3,11 +3,12 @@ import PrimaryButton from "../atoms/PrimaryButton";
 import Menu from "@/assets/svgs/Menu";
 import ArrowUp from "@/assets/svgs/ArrowUp";
 import Mix from "@/assets/svgs/Mix";
+import { websiteTitle } from "@/constants";
 
 const Navbar = () => {
   return (
     <div className="relative z-10 flex justify-between items-center px-[30px] md:px-[52px]">
-      <h2 className="text-[#EFF5FF] font-bold text-base">Diss Miss</h2>
+      <h2 className="text-primary font-bold text-base">{websiteTitle}</h2>
       <div className="hidden lg:flex items-center gap-5">
         <div className="bg-white bg-opacity-[0.1] rounded-[16px] flex justify-center items-center gap-5 py-[15px] px-[24px]">
           <Mix />

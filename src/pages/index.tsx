@@ -15,17 +15,19 @@ import Sidebar from "@/layout/Sidebar";
 import OwnershipInfo from "@/components/molecules/OwnershipInfo";
 import Cryptocurrencies from "@/components/molecules/Cryptocurrencies";
 import Facilities from "@/components/molecules/Facilities";
+import Footer from "@/layout/Footer";
 
 export default function Home() {
   return (
     <Container className="md:flex md:my-32">
       <Sidebar />
-      <div className="bg-background md:rounded-[45px] pt-16 w-full">
+      <div className="bg-background border-2 border-white-transparent md:rounded-[45px] pt-16 w-full overflow-hidden">
         <Navbar />
         <HeroSection />
         <OwnershipInfo />
         <Cryptocurrencies />
         <Facilities />
+        <Footer />
       </div>
     </Container>
   );

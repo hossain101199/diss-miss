@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import heroImage from "../../assets/images/heroImage.png";
 import BaseText from "../atoms/BaseText";
+import { heroSlogan, heroTitle1, heroTitle2, heroTitle3 } from "@/constants";
 
 const HeroSection = () => {
   return (
@@ -14,20 +15,18 @@ const HeroSection = () => {
 
       <div className="lg:col-span-5 flex flex-col justify-center">
         <h1 className="text-primary font-[800] text-[42px] lg:text-[50px] xl:text-[60px] 2xl:text-[90px]">
-          Get your <br />
-          Tokenized, Get <br />
+          {heroTitle1} <br />
+          {heroTitle2}
         </h1>
         <div className="relative">
           <h1 className="HeroText font-[800] text-[42px] lg:text-[50px] xl:text-[60px] 2xl:text-[90px] relative z-10">
-            Digitalized!
+            {heroTitle3}
           </h1>
           <div className="HeroTextStroke font-[800] overflow-hidden text-[42px] lg:text-[50px] xl:text-[60px] 2xl:text-[90px]">
-            Digitalized!
+            {heroTitle3}
           </div>
         </div>
-        <BaseText className="mt-9 md:mt-14">
-          Tokenized stocks offer several benefits over traditional sticks.
-        </BaseText>
+        <BaseText className="mt-9 md:mt-14">{heroSlogan}</BaseText>
       </div>
     </section>
   );

@@ -5,14 +5,14 @@ import Text4XL from "../atoms/Text4XL";
 import Hr from "../atoms/Hr";
 
 import CoinCard from "../atoms/CoinCard";
-import { coinList } from "@/constants";
+import { coinList, coinSlogan, coinTitle } from "@/constants";
 
 const Cryptocurrencies = () => {
   return (
     <>
       <div className="lg:flex flex-col items-center mt-16 md:mt-36 px-[30px]">
-        <BaseText className="mb-7">Overcome the barier of limitation,</BaseText>
-        <Text4XL className="mb-8">Trade with multiple Cryptocurrencies</Text4XL>
+        <BaseText className="mb-7">{coinSlogan}</BaseText>
+        <Text4XL className="mb-8">{coinTitle}</Text4XL>
         <Hr />
       </div>
       <div className="CoinCardParents overflow-x-scroll overflow-hidden">
