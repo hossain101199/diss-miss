@@ -3,7 +3,9 @@ import PTag from "../atoms/BaseText";
 import BaseText from "../atoms/BaseText";
 import Text4XL from "../atoms/Text4XL";
 import Hr from "../atoms/Hr";
-import Card from "../atoms/Card";
+
+import CoinCard from "../atoms/CoinCard";
+import { coinList } from "@/constants";
 
 const Cryptocurrencies = () => {
   return (
@@ -13,8 +15,27 @@ const Cryptocurrencies = () => {
         <Text4XL className="mb-8">Trade with multiple Cryptocurrencies</Text4XL>
         <Hr />
       </div>
-      <div className="mt-8 md:mt-16">
-        <Card />
+      <div className="CoinCardParents overflow-x-scroll overflow-hidden">
+        <div className="mt-8 md:mt-16 flex justify-center items-center gap-[30px]">
+          {coinList.slice(0, 5).map((coin) => (
+            <CoinCard
+              key={coin.id}
+              title={coin.name}
+              icon={<coin.icon />}
+              className="min-w-[250px]"
+            />
+          ))}
+        </div>
+        <div className="flex justify-center items-center gap-[30px] mt-[30px] mb-8 md:mb-16">
+          {coinList.slice(5, 9).map((coin) => (
+            <CoinCard
+              key={coin.id}
+              title={coin.name}
+              icon={<coin.icon />}
+              className="min-w-[250px]"
+            />
+          ))}
+        </div>
       </div>
     </>
   );

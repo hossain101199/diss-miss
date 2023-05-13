@@ -80,11 +80,31 @@
   border: 2px solid #a15fee;
 }
 
-.Card {
+.CoinCard {
   box-sizing: border-box;
   background: rgba(155, 164, 240, 0.15);
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(8.5px);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 26px;
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.CoinCard:hover {
+  transform: rotate(-7deg);
+}
+.CoinCard:hover h4 {
+  background: linear-gradient(
+    90.69deg,
+    #fcbb0a 0%,
+    rgba(183, 122, 255, 0.25) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.CoinCardParents::-webkit-scrollbar {
+  display: none;
 }

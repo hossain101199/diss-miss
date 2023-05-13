@@ -11,7 +11,11 @@ module.exports = {
       colors: {
         primary: "#E2EBFB",
         secondary: "#9690AD",
+        yellowRba: "#EECB1C",
         background: "#1D112B",
+      },
+      borderColor: {
+        "white-transparent": "rgba(255, 255, 255, 0.2)",
       },
       backgroundImage: {
         backgroundGradient:

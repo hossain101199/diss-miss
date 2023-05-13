@@ -14,6 +14,7 @@ import bg from "../assets/images/logo.png";
 import Sidebar from "@/layout/Sidebar";
 import OwnershipInfo from "@/components/molecules/OwnershipInfo";
 import Cryptocurrencies from "@/components/molecules/Cryptocurrencies";
+import Facilities from "@/components/molecules/Facilities";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <HeroSection />
         <OwnershipInfo />
         <Cryptocurrencies />
+        <Facilities />
       </div>
     </Container>
   );

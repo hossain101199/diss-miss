@@ -9,13 +9,11 @@ interface Text4XLProps {
 const Text4XL = ({
   children,
   className = "",
-  font = "text-3xl md:text-[40px] md:leading-10",
-  size = "font-extrabold",
+  font = "font-extrabold",
+  size = "text-3xl md:text-[40px] md:leading-10",
 }: Text4XLProps) => {
   return (
-    <div className={`text-primary ${font} ${size} ${className}`}>
-      {children}
-    </div>
+    <h4 className={`text-primary ${font} ${size} ${className}`}>{children}</h4>
   );
 };
 
