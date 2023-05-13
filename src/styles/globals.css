@@ -109,20 +109,104 @@
   display: none;
 }
 
-/* #tokensRate th,
+#tokensRate::-webkit-scrollbar {
+  display: none;
+}
+
+#tokensRate th,
 td {
   padding: 27px 17px 27px 0;
   text-align: left;
-} */
-/* #tokensRate tr th {
+}
+#tokensRate tr th:last-child,
+td:last-child {
+  text-align: center;
+}
+
+#tokensRate tr th:last-child,
+td:last-child {
+  padding: 0px;
+}
+
+#tokensRate thead th {
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: -0.02em;
   color: #e2ebfb;
   opacity: 0.4;
-} */
+}
 
-/* #tokensRate tr:last-child {
-  padding: 100px;
-} */
+#tokensRate tr td:first-child {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  color: #e2ebfb;
+}
+#tokensRate tr td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  color: #9690ad;
+}
+
+.votingBgImage {
+  background-image: url("../assets/images/votingsBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*  */
+
+#votingsChart::-webkit-scrollbar {
+  display: none;
+}
+
+#votingsChart th,
+td {
+  padding: 27px 17px 27px 0;
+  text-align: left;
+}
+
+#votingsChart tr th:last-child,
+td:last-child {
+  padding: 0px;
+}
+
+#votingsChart thead th {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.02em;
+  color: #e2ebfb;
+  opacity: 0.4;
+}
+
+#votingsChart tr td:first-child {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  color: #e2ebfb;
+}
+#votingsChart tr td:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  color: #a15fee;
+  text-align: left;
+}
+#votingsChart tr td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 80%;
+  letter-spacing: -0.04em;
+  color: #9690ad;
+}

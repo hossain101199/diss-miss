@@ -56,6 +56,91 @@ export const facilities: Facilitie[] = [
   { id: 5, title: "Get the latest crypto trends in one place" },
 ];
 
+export const tokenRateTitle: string =
+  "Top tokens with lowest interest rate to borrow!";
+export const votingTitle: string = "Currently running Votings";
+export const votingSubject: string = "What should be the Trading commission?";
+export const votingEndDate: number = 5;
+interface tokenRate {
+  id: number;
+  coin: string;
+  anualInterestRate: number;
+  sevenDays: number;
+  thirtyDays: number;
+}
+
+export const tokensRate: tokenRate[] = [
+  {
+    id: 1,
+    coin: "ETH",
+    anualInterestRate: 5,
+    sevenDays: 1,
+    thirtyDays: 3,
+  },
+  {
+    id: 2,
+    coin: "DAI",
+    anualInterestRate: 4,
+    sevenDays: 1,
+    thirtyDays: 3,
+  },
+  {
+    id: 3,
+    coin: "BNB",
+    anualInterestRate: 7,
+    sevenDays: 2,
+    thirtyDays: 4,
+  },
+  {
+    id: 4,
+    coin: "MATIC",
+    anualInterestRate: 5,
+    sevenDays: 1,
+    thirtyDays: 3,
+  },
+  {
+    id: 5,
+    coin: "ETH",
+    anualInterestRate: 5,
+    sevenDays: 1,
+    thirtyDays: 3,
+  },
+  {
+    id: 6,
+    coin: "DAI",
+    anualInterestRate: 4,
+    sevenDays: 1,
+    thirtyDays: 3,
+  },
+  {
+    id: 7,
+    coin: "BNB",
+    anualInterestRate: 7,
+    sevenDays: 2,
+    thirtyDays: 4,
+  },
+  {
+    id: 8,
+    coin: "MATIC",
+    anualInterestRate: 5,
+    sevenDays: 1,
+    thirtyDays: 3,
+  },
+];
+
+interface voting {
+  id: number;
+  options: number;
+  voteCount: number;
+}
+export const votingsData: voting[] = [
+  { id: 1, options: 0.0002, voteCount: 11 },
+  { id: 2, options: 0.0003, voteCount: 1 },
+  { id: 3, options: 0.001, voteCount: 3 },
+  { id: 4, options: 0.0002, voteCount: 2 },
+  { id: 5, options: 0.0003, voteCount: 1 },
+  { id: 6, options: 0.001, voteCount: 3 },
+];
 export const footerSlogan: string = " Your One-Stop Crypto Solution Provider";
 interface SocialMedia {
   id: number;
