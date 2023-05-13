@@ -3,6 +3,7 @@ import PTag from "../atoms/BaseText";
 import BaseText from "../atoms/BaseText";
 import Text4XL from "../atoms/Text4XL";
 import Hr from "../atoms/Hr";
+import Card from "../atoms/Card";
 
 const Cryptocurrencies = () => {
   return (
@@ -12,7 +13,9 @@ const Cryptocurrencies = () => {
         <Text4XL className="mb-8">Trade with multiple Cryptocurrencies</Text4XL>
         <Hr />
       </div>
-      <div className="mt-8 md:mt-16"></div>
+      <div className="mt-8 md:mt-16">
+        <Card />
+      </div>
     </>
   );
 };
