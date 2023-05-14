@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.mainBgImage {
+  background-image: url("../assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .sideGradient1 {
   width: 128px;
   height: 130px;
@@ -209,4 +215,216 @@ td:last-child {
   line-height: 80%;
   letter-spacing: -0.04em;
   color: #9690ad;
+}
+
+/* gradientEllipse */
+.gradientEllipse857 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 25px;
+  top: 100px;
+  background: rgba(207, 77, 215, 0.2);
+  filter: blur(200px);
+}
+.gradientEllipse866 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 197px;
+  top: 1022px;
+  background: rgba(207, 77, 215, 0.2);
+  filter: blur(200px);
+}
+.gradientEllipse854 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 900.87px;
+  top: 359px;
+  background: rgba(207, 77, 215, 0.2);
+  filter: blur(200px);
+}
+.gradientEllipse862 {
+  position: absolute;
+  width: 340px;
+  height: 343px;
+  left: 93px;
+  top: 0px;
+  background: #f01312;
+  opacity: 0.2;
+  filter: blur(100px);
+}
+.gradientEllipse875 {
+  position: absolute;
+  width: 383px;
+  height: 327px;
+  left: 454px;
+  top: 2689px;
+  background: #ffba07;
+  opacity: 0.3;
+  filter: blur(175px);
+}
+.gradientEllipse879 {
+  position: absolute;
+  width: 410px;
+  height: 415px;
+  left: 1008px;
+  top: 2991px;
+  background: #9e7cff;
+  opacity: 0.4;
+  filter: blur(150px);
+}
+.gradientEllipse878 {
+  position: absolute;
+  width: 410px;
+  height: 415px;
+  left: 959px;
+  top: 2335px;
+  background: #9e7cff;
+  opacity: 0.4;
+  filter: blur(150px);
+}
+.gradientEllipse870 {
+  position: absolute;
+  width: 410px;
+  height: 415px;
+  left: 567px;
+  top: 1901px;
+  background: #ffba07;
+  opacity: 0.2;
+  filter: blur(150px);
+}
+.gradientEllipse865 {
+  position: absolute;
+  width: 410px;
+  height: 415px;
+  left: 965px;
+  top: 1164px;
+  background: #ffba07;
+  opacity: 0.2;
+  filter: blur(150px);
+}
+.gradientEllipse864 {
+  position: absolute;
+  width: 410px;
+  height: 415px;
+  left: 250px;
+  top: 699px;
+  background: #ffba07;
+  opacity: 0.2;
+  filter: blur(100px);
+}
+.gradientEllipse863 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 1028px;
+  top: -16px;
+  background: #ffba07;
+  opacity: 0.2;
+  filter: blur(100px);
+}
+.gradientEllipse859 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 361px;
+  top: 243px;
+  background: #edca1c;
+  opacity: 0.1;
+  filter: blur(200px);
+}
+.gradientEllipse860 {
+  position: absolute;
+  width: 350px;
+  height: 353px;
+  left: 541px;
+  top: 320px;
+  background: #e62107;
+  opacity: 0.3;
+  filter: blur(150px);
+}
+.gradientEllipse861 {
+  position: absolute;
+  width: 350px;
+  height: 353px;
+  left: 358px;
+  top: 250px;
+  background: #ffe001;
+  opacity: 0.3;
+  filter: blur(100px);
+}
+.gradientEllipse858 {
+  position: absolute;
+  width: 276px;
+  height: 278px;
+  left: 0px;
+  top: 0px;
+  background: #ffe001;
+  opacity: 0.3;
+  filter: blur(100px);
+}
+.gradientEllipse876 {
+  position: absolute;
+  width: 436px;
+  height: 413px;
+  left: 61px;
+  top: 1870px;
+  background: rgba(142, 102, 255, 0.5);
+  filter: blur(200px);
+}
+.gradientEllipse868 {
+  position: absolute;
+  width: 436px;
+  height: 413px;
+  left: 906px;
+  top: 1602px;
+  background: rgba(142, 102, 255, 0.5);
+  filter: blur(200px);
+}
+.gradientEllipse874 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 158px;
+  top: 2979px;
+  background: rgba(142, 102, 255, 0.3);
+  filter: blur(200px);
+}
+.gradientEllipse873 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 473px;
+  top: 2180px;
+  background: rgba(142, 102, 255, 0.3);
+  filter: blur(200px);
+}
+.gradientEllipse869 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 488px;
+  top: 1762px;
+  background: rgba(142, 102, 255, 0.3);
+  filter: blur(200px);
+}
+.gradientEllipse867 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 16px;
+  top: 1173px;
+  background: rgba(142, 102, 255, 0.3);
+  filter: blur(200px);
+}
+.gradientEllipse852 {
+  position: absolute;
+  width: 562.46px;
+  height: 568px;
+  left: 908px;
+  top: 721px;
+  background: rgba(142, 102, 255, 0.3);
+  filter: blur(200px);
 }

@@ -17,14 +17,14 @@ import PrimaryButton from "../atoms/PrimaryButton";
 const TokensAndVoatings = () => {
   return (
     <section className="mt-32 lg:mt-36 lg:flex gap-20 justify-center ">
-      <div className="lg:border-2 border-white-transparent lg:rounded-[45px] lg:p-9 lg:max-w-[500px] max-h-[460px] overflow-hidden">
+      <div className="lg:border-2 border-white-transparent lg:rounded-[45px] lg:p-9 lg:max-w-[500px] h-fit">
         <Text4XL size="text-[30px] leading-10 lg:leading-snug px-[30px] lg:px-0">
           {tokenRateTitle}
         </Text4XL>
         <RateChart />
       </div>
       <div className="relative  h-fit mt-36 lg:mt-14 ">
-        <div className="votingBgImage  border-2 border-white-transparent rounded-[45px] p-[30px] lg:p-9 lg:max-w-[500px] max-h-[460px] overflow-hidden">
+        <div className="votingBgImage  border-2 border-white-transparent rounded-[45px] p-[30px] lg:p-9 lg:max-w-[500px]">
           <Text4XL size="text-[30px] leading-10 lg:leading-snug">
             {votingTitle}
           </Text4XL>

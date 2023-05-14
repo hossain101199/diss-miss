@@ -6,7 +6,7 @@ const RateChart = () => {
   return (
     <div
       id="tokensRate"
-      className="overflow-scroll mx-5 lg:mx-0 h-[150px] lg:h-full mt-7 lg:mt-9"
+      className="overflow-scroll mx-5 lg:mx-0 h-[250px] mt-7 lg:mt-9  "
     >
       <table className="w-full">
         <thead>

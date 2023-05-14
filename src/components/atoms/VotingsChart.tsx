@@ -6,7 +6,7 @@ const VotingsChart = () => {
   return (
     <div
       id="votingsChart"
-      className="overflow-scroll mx-5 lg:mx-0 h-[150px] lg:h-full mt-10 lg:mt-8"
+      className="overflow-scroll mx-5 lg:mx-0 h-[250px] mt-10 lg:mt-8"
     >
       <table className="w-full">
         <thead>

@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import heroImage from "../../assets/images/heroImage.png";
+import pattern from "../../assets/images/pattern.png";
 import BaseText from "../atoms/BaseText";
 import { heroSlogan, heroTitle1, heroTitle2, heroTitle3 } from "@/constants";
 
 const HeroSection = () => {
   return (
-    <section className="grid lg:grid-cols-9 content-center px-[30px] lg:mt-16">
+    <section className="relative grid lg:grid-cols-9 content-center px-[30px] lg:mt-16">
       <Image
         src={heroImage}
         alt="Image description"
@@ -28,6 +29,11 @@ const HeroSection = () => {
         </div>
         <BaseText className="mt-9 md:mt-14">{heroSlogan}</BaseText>
       </div>
+      <Image
+        src={pattern}
+        alt="Image description"
+        className="absolute bottom-0 right-0"
+      />
     </section>
   );
 };

@@ -17,7 +17,7 @@ const Cryptocurrencies = () => {
         <Text4XL className="mb-8">{coinTitle}</Text4XL>
         <Hr />
       </div>
-      <div className="CoinCardParents relative overflow-x-scroll overflow-hidden">
+      <div className="CoinCardParents overflow-scroll relative">
         <div className="mt-8 lg:mt-16 flex justify-center items-center gap-[30px]">
           {coinList.slice(0, 5).map((coin) => (
             <CoinCard
