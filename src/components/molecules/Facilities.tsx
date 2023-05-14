@@ -18,7 +18,7 @@ const Facilities = () => {
           <BaseText className="mt-6 md:mt-9">{facilitieSlogan}</BaseText>
         </div>
       </div>
-      <div className="col-span-2 flex flex-col items-start gap-8 mt-8 lg:mt-0">
+      <div className="col-span-2 flex flex-col items-start gap-3 mt-8 lg:mt-0">
         {facilities.map((faciliti, index) => (
           <BulletCheckMark
             key={faciliti.id}

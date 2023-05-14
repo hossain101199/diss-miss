@@ -11,7 +11,7 @@ const HeroSection = () => {
       <Image
         src={heroImage}
         alt="Image description"
-        className="lg:col-span-4 lg:scale-125 w-full"
+        className="lg:col-span-4 w-full "
       />
 
       <div className="lg:col-span-5 flex flex-col justify-center">

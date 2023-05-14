@@ -97,10 +97,10 @@
   transition: transform 0.3s ease;
   cursor: pointer;
 }
-.CoinCard:hover {
+.cardParent:hover .CoinCard {
   transform: rotate(-7deg);
 }
-.CoinCard:hover h4 {
+.cardParent:hover .CoinCard h4 {
   background: linear-gradient(
     90.69deg,
     #fcbb0a 0%,
@@ -113,6 +113,21 @@
 
 .CoinCardParents::-webkit-scrollbar {
   display: none;
+}
+
+.tokensRateBgImage {
+  background: linear-gradient(
+    141.93deg,
+    rgba(155, 164, 240, 0.25) 6.98%,
+    rgba(173, 181, 251, 0) 91.14%
+  );
+  filter: drop-shadow(0px 0px 35px rgba(0, 0, 0, 0.05));
+  border-radius: 35px;
+}
+@media only screen and (max-width: 1024px) {
+  .tokensRateBgImage {
+    background-image: none;
+  }
 }
 
 #tokensRate::-webkit-scrollbar {
@@ -163,10 +178,21 @@ td:last-child {
 .votingBgImage {
   background-image: url("../assets/images/votingsBG.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
 }
 
-/*  */
+/* .votingBgImage::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 45px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.2;
+} */
 
 #votingsChart::-webkit-scrollbar {
   display: none;

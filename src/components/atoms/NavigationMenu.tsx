@@ -11,9 +11,15 @@ import Blog from "@/assets/svgs/Blog";
 import Logo from "../../assets/images/logo.png";
 import userImage from "../../assets/images/userImage.png";
 
-const NavigationMenu = () => {
+const NavigationMenu = ({
+  className = "top-[50px] right-[-1050px]",
+}: {
+  className?: string;
+}) => {
   return (
-    <div className="bg-backgroundGradient z-50 absolute top-[50px] right-0 h-[80vh] w-screen overflow-hidden lg:hidden">
+    <div
+      className={`bg-backgroundGradient z-50 absolute h-fit w-full overflow-hidden lg:hidden ${className}`}
+    >
       <div className="mainBgImage w-full h-full p-[30px]">
         <div className="flex justify-between">
           <Link href="#">

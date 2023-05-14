@@ -56,7 +56,7 @@ const Navbar = () => {
           <Menu />
         </button>
       </div>
-      {isNavOpen && <NavigationMenu />}
+      {isNavOpen && <NavigationMenu className="top-[50px] right-0" />}
       <Modal show={show} handleClose={handleClose}>
         <div className="lg:p-9 lg:max-w-[500px] h-fit">
           <Text4XL size="text-[30px] leading-10 lg:leading-snug px-[30px] lg:px-0">
