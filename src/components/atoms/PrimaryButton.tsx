@@ -7,6 +7,7 @@ interface PrimaryButtonProps {
   hoverButton?: boolean;
   className?: string;
   color?: string;
+  handleClick?: () => void | undefined;
 }
 
 const PrimaryButton = ({
@@ -15,7 +16,13 @@ const PrimaryButton = ({
   className = "",
   color = "bg-ButtonGradient border-[#FFB11A]",
   hoverButton = false,
+  handleClick,
 }: PrimaryButtonProps) => {
+  const onClick = () => {
+    if (handleClick !== undefined) {
+      handleClick();
+    }
+  };
   return (
     <>
       {hoverButton ? (
@@ -26,6 +33,7 @@ const PrimaryButton = ({
         </button>
       ) : (
         <button
+          onClick={onClick}
           className={`border-2 ${color} rounded-xl py-[15px] px-[24px] font-semibold text-xs flex items-center flex-nowrap gap-[17px] text-primary  ${className}`}
         >
           {title && title} {icon && icon}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import crystalImage from "../../assets/images/crystalImage.png";
 import crystalImage2 from "../../assets/images/crystalImage2.png";
 import Hr from "../atoms/Hr";
@@ -9,6 +9,14 @@ import BaseText from "../atoms/BaseText";
 import Text4XL from "../atoms/Text4XL";
 
 const OwnershipInfo = () => {
+  const [slideNumber, setSlideNumber] = useState(1);
+  const handleSlider = (): void => {
+    if (slideNumber < 10) {
+      setSlideNumber(slideNumber + 1);
+    } else {
+      setSlideNumber(1);
+    }
+  };
   return (
     <section className="grid lg:grid-cols-7 justify-center mt-20 lg:mt-36">
       <Image
@@ -32,12 +40,14 @@ const OwnershipInfo = () => {
             and sell smaller portions of a company’s stock. This opens up
             investment opportunities to a much wider categories.
           </BaseText>
-          <h1 className="font-extrabold text-[200px] slideCount">01</h1>
+          <h1 className="font-extrabold text-[200px] slideCount">
+            {slideNumber < 10 ? `0${slideNumber}` : `${slideNumber}`}
+          </h1>
           <div className="flex items-center gap-5 mt-14">
             <div className="hidden lg:flex items-center justify-between w-3/4 font-semibold text-sm text-white">
               <hr className="w-3/4" /> Next
             </div>
-            <NextButton />
+            <NextButton handleClick={handleSlider} />
           </div>
         </div>
       </div>
