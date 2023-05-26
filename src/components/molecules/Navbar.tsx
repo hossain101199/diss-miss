@@ -9,18 +9,6 @@ import useModal from "@/hooks/useModal";
 import Modal from "./Modal";
 import RateChart from "../atoms/RateChart";
 import Text4XL from "../atoms/Text4XL";
-import Sidebar from "@/layout/Sidebar";
-import Logo from "@/assets/svgs/Logo";
-import HomeIcon from "@/assets/svgs/HomeIcon";
-import Invest from "@/assets/svgs/Invest";
-import Swap from "@/assets/svgs/Swap";
-import Loans from "@/assets/svgs/Loans";
-import Voting from "@/assets/svgs/Voting";
-import Blog from "@/assets/svgs/Blog";
-import Image from "next/image";
-import userImage from "../../assets/images/userImage.png";
-import logo from "../../assets/images/logo.png";
-import NavLink from "../atoms/NavLink";
 import NavigationMenu from "../atoms/NavigationMenu";
 
 const Navbar = () => {

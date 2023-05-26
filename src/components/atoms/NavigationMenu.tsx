@@ -10,6 +10,7 @@ import Voting from "@/assets/svgs/Voting";
 import Blog from "@/assets/svgs/Blog";
 import Logo from "../../assets/images/logo.png";
 import userImage from "../../assets/images/userImage.png";
+import { sidebarNavLinks } from "@/constants";
 
 const NavigationMenu = ({
   className = "top-[50px] right-[-1050px]",
@@ -35,12 +36,14 @@ const NavigationMenu = ({
           </Link>
         </div>
         <div className="flex flex-col items-center gap-11">
-          <NavLink href="#" icon={<Invest />} title="Invest" />
-          <NavLink href="#" icon={<Swap />} title="Swap" />
-          <NavLink href="#" icon={<Mix />} title="Mix" />
-          <NavLink href="#" icon={<Loans />} title="Loans" />
-          <NavLink href="#" icon={<Voting />} title="Voting" />
-          <NavLink href="#" icon={<Blog />} title="Blog" />
+          {sidebarNavLinks.slice(1).map((navLink) => (
+            <NavLink
+              key={navLink.id}
+              href={navLink.href}
+              icon={<navLink.icon />}
+              title={navLink.title}
+            />
+          ))}
         </div>
       </div>
     </div>

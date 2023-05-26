@@ -23,12 +23,7 @@ const Facilities = () => {
           <BulletCheckMark
             key={faciliti.id}
             title={faciliti.title}
-            className={`
-            ${index == 1 ? "lg:ms-[20px]" : ""}
-            ${index == 2 ? "lg:ms-[40px]" : ""}
-            ${index == 3 ? "lg:ms-[60px]" : ""}
-            ${index == 4 ? "lg:ms-[80px]" : ""}
-        `}
+            className={faciliti.class}
           />
         ))}
       </div>

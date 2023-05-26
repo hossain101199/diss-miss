@@ -1,7 +1,5 @@
-import { title } from "process";
 import UsdCoin from "@/assets/svgs/UsdCoin";
 import Ethereum from "../assets/svgs/Ethereum";
-import React from "react";
 import Chainlink from "@/assets/svgs/Chainlink";
 import Dai from "@/assets/svgs/Dai";
 import Matic from "@/assets/svgs/Matic";
@@ -14,6 +12,29 @@ import Linkedin from "@/assets/svgs/Linkedin";
 import Twitter from "@/assets/svgs/Twitter";
 import Telegram from "@/assets/svgs/Telegram";
 import Discord from "@/assets/svgs/Discord";
+import HomeIcon from "@/assets/svgs/HomeIcon";
+import Invest from "@/assets/svgs/Invest";
+import Swap from "@/assets/svgs/Swap";
+import Mix from "@/assets/svgs/Mix";
+import Loans from "@/assets/svgs/Loans";
+import Voting from "@/assets/svgs/Voting";
+import Blog from "@/assets/svgs/Blog";
+
+interface SidebarNavLinks {
+  id: number;
+  href: string;
+  icon: any;
+  title: string;
+}
+export const sidebarNavLinks: SidebarNavLinks[] = [
+  { id: 1, href: "#", icon: HomeIcon, title: "Home" },
+  { id: 2, href: "#", icon: Invest, title: "Invest" },
+  { id: 3, href: "#", icon: Swap, title: "Swap" },
+  { id: 4, href: "#", icon: Mix, title: "Mix" },
+  { id: 5, href: "#", icon: Loans, title: "Loans" },
+  { id: 6, href: "#", icon: Voting, title: "Voting" },
+  { id: 7, href: "#", icon: Blog, title: "Blog" },
+];
 
 export const websiteTitle: string = "Diss Miss";
 export const heroTitle1: string = "Get your";
@@ -47,13 +68,26 @@ export const facilitieSlogan: string = "Swisscheese Features";
 interface Facilitie {
   id: number;
   title: string;
+  class: string;
 }
 export const facilities: Facilitie[] = [
-  { id: 1, title: "Trade popular stocks, currencies, bonds" },
-  { id: 2, title: "Swap Cryptos with Tokenized Stocks" },
-  { id: 3, title: "Vote on community governance proposals" },
-  { id: 4, title: "Lend, Borrow with highest returns" },
-  { id: 5, title: "Get the latest crypto trends in one place" },
+  {
+    id: 1,
+    title: "Trade popular stocks, currencies, bonds",
+    class: "",
+  },
+  { id: 2, title: "Swap Cryptos with Tokenized Stocks", class: "lg:ms-[20px]" },
+  {
+    id: 3,
+    title: "Vote on community governance proposals",
+    class: "lg:ms-[40px]",
+  },
+  { id: 4, title: "Lend, Borrow with highest returns", class: "lg:ms-[60px]" },
+  {
+    id: 5,
+    title: "Get the latest crypto trends in one place",
+    class: "lg:ms-[80px]",
+  },
 ];
 
 export const tokenRateTitle: string =

@@ -10,6 +10,7 @@ import Image from "next/image";
 import React from "react";
 import userImage from "../assets/images/userImage.png";
 import Link from "next/link";
+import { sidebarNavLinks } from "@/constants";
 
 const Sidebar = () => {
   return (
@@ -19,27 +20,11 @@ const Sidebar = () => {
           <Logo />
         </Link>
         <div className="flex flex-col gap-11">
-          <Link href="#">
-            <HomeIcon />
-          </Link>
-          <Link href="#">
-            <Invest />
-          </Link>
-          <Link href="#">
-            <Swap />
-          </Link>
-          <Link href="#">
-            <Mix />
-          </Link>
-          <Link href="#">
-            <Loans />
-          </Link>
-          <Link href="#">
-            <Voting />
-          </Link>
-          <Link href="#">
-            <Blog />
-          </Link>
+          {sidebarNavLinks.map((navLink) => (
+            <Link key={navLink.id} href={navLink.href}>
+              <navLink.icon />
+            </Link>
+          ))}
         </div>
         <Link href="#">
           <Image
